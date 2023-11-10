@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_maximumWealth(t *testing.T) {
+func TestMaximumWealth(t *testing.T) {
 	type args struct {
 		accounts [][]int
 	}
@@ -77,7 +77,7 @@ func Test_maximumWealth(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := easy.MaximumWealth(tt.args.accounts); got != tt.want {
-				t.Errorf("maximumWealth() = %v, want %v", got, tt.want)
+				t.Errorf("MaximumWealth() = %v, want %v", got, tt.want)
 			}
 		})
 	}
