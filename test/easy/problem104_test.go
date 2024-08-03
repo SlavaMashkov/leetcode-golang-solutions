@@ -32,6 +32,8 @@ func TestMaxDepth(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
+			t.Logf("nodes: %v", easy.DFS(tt.args.root))
+
 			if got := easy.MaxDepth(tt.args.root); got != tt.want {
 				t.Errorf("MaxDepth() = %v, want %v", got, tt.want)
 			}
