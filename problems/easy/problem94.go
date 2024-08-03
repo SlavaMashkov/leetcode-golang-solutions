@@ -1,12 +1,15 @@
 package easy
 
-import "fmt"
+import (
+	"fmt"
+	"leetcode/problems/structures"
+)
 
 // 94. Binary Tree Inorder Traversal
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
 
-func InorderTraversal(root *TreeNode) []int {
-	var stack []TreeNode
+func InorderTraversal(root *structures.TreeNode) []int {
+	var stack []structures.TreeNode
 	var result []int
 
 	current := root

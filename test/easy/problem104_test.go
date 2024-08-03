@@ -2,12 +2,13 @@ package easy
 
 import (
 	"leetcode/problems/easy"
+	"leetcode/problems/structures"
 	"testing"
 )
 
 func TestMaxDepth(t *testing.T) {
 	type args struct {
-		root *easy.TreeNode
+		root *structures.TreeNode
 	}
 	tests := []struct {
 		name string
@@ -39,32 +40,32 @@ func TestMaxDepth(t *testing.T) {
 }
 
 // TODO: create function that will create binary tree based on slice
-func getTree1() *easy.TreeNode {
-	n15 := &easy.TreeNode{
+func getTree1() *structures.TreeNode {
+	n15 := &structures.TreeNode{
 		Val:   15,
 		Left:  nil,
 		Right: nil,
 	}
 
-	n7 := &easy.TreeNode{
+	n7 := &structures.TreeNode{
 		Val:   7,
 		Left:  nil,
 		Right: nil,
 	}
 
-	n20 := &easy.TreeNode{
+	n20 := &structures.TreeNode{
 		Val:   20,
 		Left:  n15,
 		Right: n7,
 	}
 
-	n9 := &easy.TreeNode{
+	n9 := &structures.TreeNode{
 		Val:   9,
 		Left:  nil,
 		Right: nil,
 	}
 
-	n3 := &easy.TreeNode{
+	n3 := &structures.TreeNode{
 		Val:   3,
 		Left:  n9,
 		Right: n20,
@@ -73,14 +74,14 @@ func getTree1() *easy.TreeNode {
 	return n3
 }
 
-func getTree2() *easy.TreeNode {
-	n2 := &easy.TreeNode{
+func getTree2() *structures.TreeNode {
+	n2 := &structures.TreeNode{
 		Val:   2,
 		Left:  nil,
 		Right: nil,
 	}
 
-	n1 := &easy.TreeNode{
+	n1 := &structures.TreeNode{
 		Val:   1,
 		Left:  nil,
 		Right: n2,
